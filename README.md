@@ -16,7 +16,7 @@ sudo apt install docker.io
 
 ## Usage
 
-1. Modify the source file **discord_crypto_price_bot.py** to add your Discord Bot Token (line 6 of the code) and the Crypto Ticker for which you want to pull the price (line 25 of the code).
+1. Modify the source file **discord_crypto_price_bot.py** in the /src directory to add your Discord Bot Token (line 6 of the code) and the Crypto Ticker for which you want to pull the price (line 25 of the code).
 
 ```python
 Line 5:    # ADD DISCORD BOT TOKEN HERE
