@@ -15,10 +15,15 @@ def token_price(ticker):
     
     try:
         response = requests.get(url=mrkt_url, params={'symbol':ticker1+'_'+ticker2})
-        response_json = response.json()
-        last_price = response_json['data'][0]['last']
-        return last_price
-    
+	
+        if response.status_code == 200:
+            response_json = response.json()
+            last_price = response_json['data'][0]['last']
+            return last_price
+
+        else:
+            print("Status code: " + str(response.status_code))  
+
     except IndexError as error:
         print("IndexError: " + str(error))
 
