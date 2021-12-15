@@ -20,7 +20,7 @@ sudo apt install docker.io
 
 ```python
 Line 5:    # ADD DISCORD BOT TOKEN HERE
-Line 6:    DISCORD_BOT_TOKEN = {ADD DISCORD BOT TOKEN HERE}
+Line 6:    DISCORD_BOT_TOKEN = "ADD DISCORD BOT TOKEN HERE"
 ```
 ```python
 Line 23:   # Change the token name below to pull the live price
