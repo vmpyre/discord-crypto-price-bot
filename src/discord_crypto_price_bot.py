@@ -7,19 +7,19 @@ DISCORD_BOT_TOKEN = {ADD DISCORD BOT TOKEN HERE}
 
 client = discord.Client()
 
+# Function that fetches live crypto token price from the MEXC exchange.
 def token_price(ticker):
     mrkt_url = 'http://mexc.com/open/api/v2/market/ticker'
     ticker1 = ticker
     ticker2 = 'USDT'
-
     response = requests.get(url=mrkt_url, params={'symbol':ticker1+'_'+ticker2})
     response_json = response.json()
     last_price = response_json['data'][0]['last']
     return last_price
 
-@tasks.loop(seconds=5)
+# Runs the token_price() function and updates the price as the bot status every 5 seconds.
+@tasks.loop(seconds = 5)
 async def switch_presence():
-
     # Change the token name below to pull the live price
     # Right now, it's set to pull price of the token 'CHICKS'
     current_price = token_price('CHICKS')
