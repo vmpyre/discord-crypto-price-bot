@@ -12,10 +12,15 @@ def token_price(ticker):
     mrkt_url = 'http://mexc.com/open/api/v2/market/ticker'
     ticker1 = ticker
     ticker2 = 'USDT'
-    response = requests.get(url=mrkt_url, params={'symbol':ticker1+'_'+ticker2})
-    response_json = response.json()
-    last_price = response_json['data'][0]['last']
-    return last_price
+    
+    try:
+        response = requests.get(url=mrkt_url, params={'symbol':ticker1+'_'+ticker2})
+        response_json = response.json()
+        last_price = response_json['data'][0]['last']
+        return last_price
+    
+    except IndexError as error:
+        print("IndexError: " + str(error))
 
 # Runs the token_price() function and updates the price as the bot status every 5 seconds.
 @tasks.loop(seconds = 5)
