@@ -28,7 +28,7 @@ Line 24:   # Right now, it's set to pull the price of the token 'CHICKS'
 Line 25:   current_price = token_price('CHICKS')
 ```
 
-2. Build the docker file:
+2. Navigate to the /src directory and build the docker file using the following command:
 ```bash
 sudo docker build -t discord-price-bot .
 ```
