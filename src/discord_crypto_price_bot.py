@@ -3,7 +3,7 @@ import discord
 from discord.ext import tasks
 
 # ADD DISCORD BOT TOKEN HERE
-DISCORD_BOT_TOKEN = {ADD DISCORD BOT TOKEN HERE}
+DISCORD_BOT_TOKEN = "ADD DISCORD BOT TOKEN HERE"
 
 client = discord.Client()
 
