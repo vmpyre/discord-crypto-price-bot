@@ -2,7 +2,7 @@
 
 Discord bot that pulls the latest price of a crypto token from the MEXC exchange and displays it as a status.
 
-![alt text](https://github.com/vmpyre/crypto-price-bot/blob/main/bot_status.PNG)
+![alt text](https://github.com/vmpyre/discord-crypto-price-bot/blob/main/bot_status.PNG)
 ## Installation
 
 1. Since we are going to run the bot in a docker container so the first thing we are going to do is install docker.
