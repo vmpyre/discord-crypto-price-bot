@@ -4,8 +4,12 @@ Discord bot that pulls the latest price of a crypto token from the MEXC exchange
 
 ![alt text](https://github.com/vmpyre/discord-crypto-price-bot/blob/main/bot_status.PNG)
 ## Installation
+1. Install Python 3
+2. ```bash
+3. sudo apt-get install python3
+4. ```
 
-1. Since we are going to run the bot in a docker container so the first thing we are going to do is install docker.
+2. Since we are going to run the bot in a docker container so the first thing we are going to do is install docker.
 Use the command below to install docker on Linux Ubuntu:
 
 ```bash
