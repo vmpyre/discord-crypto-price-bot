@@ -28,9 +28,9 @@ Line 5:    # ADD DISCORD BOT TOKEN HERE
 Line 6:    DISCORD_BOT_TOKEN = "ADD DISCORD BOT TOKEN HERE"
 ```
 ```python
-Line 23:   # Change the token name below to pull the live price
-Line 24:   # Right now, it's set to pull the price of the token 'CHICKS'
-Line 25:   current_price = token_price('CHICKS')
+Line 28:   # Change the token name below to pull the live price
+Line 29:   # Right now, it's set to pull the price of the token 'CHICKS'
+Line 30:   current_price = token_price('CHICKS')
 ```
 
 2. Navigate to the /src directory and build the docker file using the following command:
