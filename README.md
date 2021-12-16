@@ -47,4 +47,4 @@ sudo docker run -d discord-price-bot
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. Please make sure to update tests as appropriate.
 
 ## Support
-If you have any questions or feedback, feel free to message me on discord Vmpyre#0505
+If you have any questions or feedback, feel free to message me on discord *Vmpyre#0505*
