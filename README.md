@@ -41,7 +41,7 @@ sudo docker build -t discord-price-bot .
 
 3. Run the docker container with your bot:
 ```bash
-sudo docker run -d discord-price-bot
+sudo docker run --name pricebot -d discord-price-bot
 ```
 
 ## Contributing
